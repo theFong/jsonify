@@ -3,8 +3,7 @@
 A little json parser that reads a listed file then then converts it into json format inteded for import in firebase.
 
 ## Run
-Options: -i
-includes numbering of list
+Option ```-i``` includes numbering of list.
 ```
 ruby jsonify.rb [read_file] [write_file] [option]
 ```
@@ -28,8 +27,7 @@ keywords
 		"2":"Palm trees",
 		"3":"Tulips",
 		"4":"Pine cone",
-		"5":"Space ship",
-		"6":"Box of candy",
+		"5":"Space ship"
 	}
 }
 ```
