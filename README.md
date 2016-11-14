@@ -1,6 +1,6 @@
 # jsonify
 
-A little json parser that reads a listed file then then converts it into json format inteded for import in firebase.
+A little json parser that reads a listed file then then converts it into json format used for importing into firebase.
 
 ## Run
 Option ```-i``` includes numbering of the list.
