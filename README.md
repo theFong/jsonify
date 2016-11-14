@@ -2,6 +2,10 @@
 
 A little json parser that reads a listed file then then converts it into json format used for importing into firebase.
 
+#### Features to be implemented
+- [ ] modularize json syntax
+- [ ] handle multiple children
+
 ## Run
 Option ```-i``` includes numbering of the list.
 ```
