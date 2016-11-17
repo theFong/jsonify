@@ -5,6 +5,7 @@ A little json parser that reads a listed file then then converts it into json fo
 #### Features to be implemented
 - [ ] modularize json syntax
 - [ ] handle multiple children
+- [ ] allow custom keys
 
 ## Run
 Option ```-i``` includes numbering of the list.
