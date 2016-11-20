@@ -20,9 +20,9 @@ File.open("example/example.txt", "r") do |f|
       count = 0
     else
       if ARGV[2] == "-i"
-        @current_node.addKeyValue count, line_split_data[1]
+        @current_node.addKeyValue count, line_split_data[1...line_split_data.size].join(" ").to_s
       else
-        @current_node.addKeyValue line_split_data[0], line_split_data[1]
+        @current_node.addKeyValue line_split_data[0], line_split_data[1...line_split_data.size].join(" ").to_s
       end
       count += 1
     end
