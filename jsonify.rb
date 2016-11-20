@@ -10,6 +10,9 @@ File.open("example/example.txt", "r") do |f|
   @current_node = nil
   count = 0
   f.each_line do |line|
+  	if line == ""
+  		next
+  	end
     line_split_data = line.split(" ")
     if line_split_data[0].include? "$"
       @current_node = Node.new line_split_data[1]

@@ -21,6 +21,7 @@ class Json
 	end
 
 	def createJson
+		childCount = 0
 		@children.each do |child|
 			@numTabs += 1
 			@jsonText += getTabs(@numTabs) + getJSONStr(child.getValue) + ": {\n"
@@ -31,7 +32,8 @@ class Json
 				index += 1
 			end
 			@numTabs -= 1
-			@jsonText += getTabs(@numTabs) + "}\n"
+			childCount += 1
+			@jsonText += getTabs(@numTabs) + "}#{childCount < @children.size ? "," : ""}\n"
 			@numTabs -= 1
 		end
 		@jsonText += getTabs(@numTabs) + "}\n"
