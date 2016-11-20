@@ -1,14 +1,19 @@
 # jsonify
 
-A little json parser that reads a listed file then then converts it into json format inteded for import in firebase.
+A little json parser that reads a listed file then then converts it into json format used for importing into firebase.
+
+#### Features to be implemented
+- [ ] modularize json syntax
+- [ ] handle multiple children
+- [ ] allow custom keys
 
 ## Run
-Option ```-i``` includes numbering of list.
+Option ```-i``` includes numbering of the list.
 ```
 ruby jsonify.rb [read_file] [write_file] [option]
 ```
 
-### Example File
+### Example 'Read' File
 ```
 keywords
 1. Race car
@@ -18,7 +23,7 @@ keywords
 5. Pine cone
 6. Space ship
 ```
-### Example .json
+### Example 'Write' .json
 ```
 {
 	"keywords": {
