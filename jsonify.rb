@@ -14,6 +14,7 @@ File.open("example/example.txt", "r") do |f|
     if line_split_data[0].include? "$"
       @current_node = Node.new line_split_data[1]
       json.addChild @current_node
+      count = 0
     else
       if ARGV[2] == "-i"
         @current_node.addKeyValue count, line_split_data[1]
