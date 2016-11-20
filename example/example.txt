@@ -1,4 +1,4 @@
-keywords
+$ keywords
 1. Race car
 2. Pirate ship
 3. Palm trees
