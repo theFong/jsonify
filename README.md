@@ -38,7 +38,6 @@ $ keywords
 }
 ```
 
-```
 ### Example 'Write' .json ```-i``` 
 ```
 {
