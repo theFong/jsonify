@@ -6,7 +6,7 @@ json = Json.new
 
 
 # ARGV[0]
-File.open("example/example.txt", "r") do |f|
+File.open(ARGV[0], "r") do |f|
   @current_node = nil
   count = 0
   f.each_line do |line|
@@ -29,4 +29,4 @@ File.open("example/example.txt", "r") do |f|
 end
 
 # ARGV[1]
-File.open("example/example.json", "w") { |file| file.write json.createJson}
+File.open(ARGV[1], "w") { |file| file.write json.createJson}
